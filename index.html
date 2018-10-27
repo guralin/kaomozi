@@ -8,16 +8,30 @@
     <title>顔文字</title>
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.2/mousetrap.min.js"></script>
 <h1>顔文字工房</h1>
-
-    <div class="round_face">
+    <script>
+        Mousetrap.bind('shift+a', function(){
+            $("left_eye").animate({
+            },300)
+        });
+    </script>
+    <div class="round_face" id="button">
         <div class="eyes left_eye">
         </div>
         <div class="eyes right_eye">
         </div>
         <div class="nose">
         </div>
-        <div class="mouth">
+        <div class="left-mouth">
+            <div class="left-mouth-black">
+            </div>
+        </div>
+        <div class="right-mouth">
+            <div class="right-mouth-black">
+            </div>
+        </div>
     </div>
 </body>
 </html>

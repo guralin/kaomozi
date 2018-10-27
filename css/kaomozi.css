@@ -1,11 +1,12 @@
 @charset "utf-8";
 
+
 .round_face{
     position: relative;
     width:200px;
     height: 200px;
     border: 1px solid black;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 100px; 
 }
 
 .nose{
@@ -24,6 +25,7 @@
     width:30px;
     height:5px;
     background-color: black;
+    transition: transform 1s;
 }
 .left_eye{
     left: 50px;
@@ -31,12 +33,43 @@
 .right_eye{
     right: 50px;
 }
-
-.mouth{
+.round_face:active .left_eye{
+    transform: rotateZ(30deg);
+}
+.round_face:active .right_eye{
+    transform: rotateZ(-30deg);
+}
+.right-mouth{
     position: absolute;
     top:150px;
     left:70px;
     width:60px;
     height: 5px;
+    transition: transform 1s;
+}
+.right-mouth-black{
     background-color: black;
+    width:30px; 
+    height:100%;
+    margin-left:30px; 
+}
+.round_face:active .right-mouth{
+    transform: rotateZ(30deg);
+}
+.left-mouth{
+    position: absolute;
+    top:150px;
+    left:70px;
+    width:60px;
+    height: 5px;
+    transition: transform 1s;
+}
+.left-mouth-black{
+    background-color: black;
+    width: 30px; 
+    height:100%;
+    margin-right: 30px;
+}
+.round_face:active .left-mouth{
+    transform: rotateZ(-30deg);
 }
