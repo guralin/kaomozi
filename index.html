@@ -8,15 +8,7 @@
     <title>顔文字</title>
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.2/mousetrap.min.js"></script>
 <h1>顔文字工房</h1>
-    <script>
-        Mousetrap.bind('shift+a', function(){
-            $("left_eye").animate({
-            },300)
-        });
-    </script>
     <div class="round_face" id="button">
         <div class="eyes left_eye">
         </div>
@@ -24,14 +16,32 @@
         </div>
         <div class="nose">
         </div>
-        <div class="left-mouth">
-            <div class="left-mouth-black">
+        <div class="left_mouth">
+            <div class="left_mouth_black">
             </div>
         </div>
-        <div class="right-mouth">
-            <div class="right-mouth-black">
+        <div class="right_mouth">
+            <div class="right_mouth_black">
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener("keydown",function(e){
+            console.log(e.key);
+            if(e.key == "ArrowDown"){
+                document.querySelector(".left_eye").classList.toggle("angry_left_eye");
+                document.querySelector(".right_eye").classList.toggle("angry_right_eye");
+                document.querySelector(".left_mouth").classList.toggle("angry_left_mouth");
+                document.querySelector(".right_mouth").classList.toggle("angry_right_mouth");
+            }
+        })
+
+    </script>
+
+    <script>
+        
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.2/mousetrap.min.js"></script>-->
 </body>
 </html>

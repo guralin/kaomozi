@@ -33,13 +33,11 @@
 .right_eye{
     right: 50px;
 }
-.round_face:active .left_eye{
+/*.round_face:active .left_eye{
     transform: rotateZ(30deg);
 }
-.round_face:active .right_eye{
-    transform: rotateZ(-30deg);
-}
-.right-mouth{
+*/
+.right_mouth{
     position: absolute;
     top:150px;
     left:70px;
@@ -47,16 +45,13 @@
     height: 5px;
     transition: transform 1s;
 }
-.right-mouth-black{
+.right_mouth_black{
     background-color: black;
     width:30px; 
     height:100%;
     margin-left:30px; 
 }
-.round_face:active .right-mouth{
-    transform: rotateZ(30deg);
-}
-.left-mouth{
+.left_mouth{
     position: absolute;
     top:150px;
     left:70px;
@@ -64,12 +59,22 @@
     height: 5px;
     transition: transform 1s;
 }
-.left-mouth-black{
+.left_mouth_black{
     background-color: black;
     width: 30px; 
     height:100%;
     margin-right: 30px;
 }
-.round_face:active .left-mouth{
+/*怒ったときの挙動*/
+.angry_left_eye{
+    transform: rotateZ(30deg);
+}
+.angry_right_eye{
     transform: rotateZ(-30deg);
+}
+.angry_left_mouth{
+    transform: rotateZ(-30deg);
+}
+.angry_right_mouth{
+    transform: rotateZ(30deg);
 }
