@@ -65,6 +65,9 @@
     height:100%;
     margin-right: 30px;
 }
+/*普通の時（寝ているときの挙動)*/
+
+
 /*怒ったときの挙動*/
 .angry_left_eye{
     transform: rotateZ(30deg);
