@@ -78,3 +78,16 @@
 .angry_right_mouth{
     transform: rotateZ(30deg);
 }
+/*笑った時の挙動*/
+.laugh_left_eye{
+    transform: rotateZ(-30deg);
+}
+.laugh_right_eye{
+    transform: rotateZ(30deg);
+}
+.laugh_left_mouth{
+    transform: rotateZ(30deg);
+}
+.laugh_right_mouth{
+    transform: rotateZ(-30deg);
+}
