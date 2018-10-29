@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-section{
-    position: relative;
-}
 
 .round_face{
     position: relative;
@@ -11,6 +8,7 @@ section{
     border: 1px solid black;
     border-radius: 100px; 
 }
+
 .nose{
     position: absolute;
     top: 80px;
@@ -35,6 +33,12 @@ section{
 .right_eye{
     right: 50px;
 }
+.round_face:active .left_eye{
+    transform: rotateZ(30deg);
+}
+.round_face:active .right_eye{
+    transform: rotateZ(-30deg);
+}
 .right-mouth{
     position: absolute;
     top:150px;
@@ -48,6 +52,9 @@ section{
     width:30px; 
     height:100%;
     margin-left:30px; 
+}
+.round_face:active .right-mouth{
+    transform: rotateZ(30deg);
 }
 .left-mouth{
     position: absolute;
@@ -63,59 +70,6 @@ section{
     height:100%;
     margin-right: 30px;
 }
-
-/*angry*/
-
-.angry{
-    position: absolute;
-    top:100px;
-    left:300px;
-    width:30px;
-    height:30px;
-}
-.angry_text{
-    position: absolute;
-    top:110px;
-    left:350px;
-    width:60px;
-    height:30px;
-}
-.angry:checked ~ .round_face>.left_eye{
-    transform: rotateZ(30deg);
-}
-.angry:checked ~ .round_face>.right_eye{
+.round_face:active .left-mouth{
     transform: rotateZ(-30deg);
-}
-.angry:checked ~ .round_face>.right-mouth{
-    transform: rotateZ(30deg);
-}
-.angry:checked ~ .round_face>.left-mouth{
-    transform: rotateZ(-30deg);
-}
-/* laugh */
-.laugh{
-    position: absolute;
-    top:150px;
-    left:300px;
-    width:30px;
-    height:30px;
-}
-.laugh_text{
-    position: absolute;
-    top:160px;
-    left:350px;
-    width:60px;
-    height:30px;
-}
-.laugh:checked ~ .round_face>.left_eye{
-    transform: rotateZ(-30deg);
-}
-.laugh:checked ~ .round_face>.right_eye{
-    transform: rotateZ(30deg);
-}
-.laugh:checked ~ .round_face>.right-mouth{
-    transform: rotateZ(-30deg);
-}
-.laugh:checked ~ .round_face>.left-mouth{
-    transform: rotateZ(30deg);
 }
